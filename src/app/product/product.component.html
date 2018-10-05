@@ -1,0 +1,18 @@
+<!-- <h2>Details</h2>
+<div><span>Product id: </span>{{product.id}}</div>
+<div><span>Product name: </span>{{product.name | uppercase}}</div>
+
+
+<div>
+    <label>Enter Product name:
+      <input [(ngModel)]="product.name" placeholder="name">
+    </label>
+  </div> -->
+
+<h2>Products</h2>
+<ul class="products">
+    <li *ngFor="let product of products">
+        <a routerLink="/detail/{{product.Id}}"></a>
+        <span class="badge">{{product.Id}}</span> {{product.Name}}
+    </li>
+</ul>
