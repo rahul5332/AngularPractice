@@ -10,7 +10,9 @@ import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import {CKEditorModule} from 'ng2-ckeditor';
-
+import {HttpClientModule} from "@angular/common/http";
+import { SafeHtmlPipe } from './safe-html.pipe';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -20,14 +22,17 @@ import {CKEditorModule} from 'ng2-ckeditor';
     ProductDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    BlogsComponent
+    BlogsComponent,
+    SafeHtmlPipe,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     HttpModule,
-    CKEditorModule
+    CKEditorModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

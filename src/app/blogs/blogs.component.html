@@ -1,4 +1,6 @@
-<form role="form" #myForm="ngForm" accept-charset="UTF-8" novalidate>
+
+
+<form role="form" #myForm="ngForm" accept-charset="UTF-8" (ngSubmit)="onSubmit()" novalidate>
     <div class="form-group has-feedback" 
           [ngClass]="{ 'has-error': myckeditor.invalid && myckeditor.touched }">
       <ckeditor [(ngModel)]="mycontent" 
