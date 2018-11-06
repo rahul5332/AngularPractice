@@ -116,7 +116,7 @@ button {
 }
 
 .sub-title {
-    padding: 30px;
+    padding: 0px;
 }
 
 .sub-title h2 {
@@ -1806,10 +1806,20 @@ blockquote {
 input{
     width:800px !important;    
 }
-p{
+/* p{
     width:800px !important;    
 }
 hr{
     width:800px !important;    
     margin-left: 0px
+} */
+
+.site-heading{
+    margin-left: 35%;
+}
+.create-date{
+    margin-left: 80%;
+}
+.nav-bar{
+    padding: 10px;
 }

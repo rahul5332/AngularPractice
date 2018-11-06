@@ -1,5 +1,9 @@
-<div>
+
+  <div>
   <div *ngFor="let blog of blogs">   
-   <div [innerHTML]="blog.Content  | safeHtml"></div>    
+    <hr>
+   <div [innerHTML]="blog.Content  | safeHtml"></div>  
+   <div class="create-date">
+      <p>Created On :  {{blog.CreatedDate}}</p>
   </div>
 </div>
